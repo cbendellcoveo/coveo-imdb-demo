@@ -1,0 +1,42 @@
+[
+    {
+        "name": "plot",
+        "type": "STRING",
+        "includeInQuery": true,
+        "includeInResults": true,
+        "mergeWithLexicon": true
+    },
+    {
+        "name": "rating",
+        "type": "DOUBLE",
+        "facet": true,
+        "useCacheForNestedQuery": true
+    },
+    {
+        "name": "votes",
+        "type": "LONG_64",
+        "facet": true,
+        "useCacheForNestedQuery": true
+    },
+    {
+        "name": "languages",
+        "type": "STRING",
+        "multiValueFacet": true,
+        "multiValueFacetTokenizers": ";",
+        "useCacheForNestedQuery": true,
+        "includeInQuery": true,
+        "includeInResults": true,
+        "mergeWithLexicon": true
+    },
+    {
+        "name": "genre",
+        "type": "STRING",
+        "multiValueFacet": true,
+        "multiValueFacetTokenizers": ";",
+        "useCacheForNestedQuery": true
+    },
+    {
+        "name": "poster_url",
+        "type": "STRING"
+    }
+]
